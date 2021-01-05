@@ -117,6 +117,7 @@ class St25r3917:
     time.sleep(1)
     print(f'{int(size)} bytes with first adress {reg}: {resp.hex()}')
     self.ser.flush()
+    return resp.hex()
 
   def fifoRead(self,size):
     """
@@ -129,3 +130,4 @@ class St25r3917:
     time.sleep(1)
     print(f'{int(size)} bytes from FIFO: {resp.hex()}')
     self.ser.flush()
+    return resp.hex()
