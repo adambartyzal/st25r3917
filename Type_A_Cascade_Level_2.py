@@ -6,18 +6,12 @@ nfc = St25r3917()
 nfc.write("00","00")
 nfc.write("01","80") # sup 3V3
 # 2
-#nfc.adjustRegulators() # TODO check if it affects distance or consumption
-
 # Settings
 
 # OSC on
 nfc.write("02","80")
 # RX,TX,FIELD
 nfc.write("02","CB")
-# anticol
-#nfc.write("05","01")
-# mixer instead of peak # TODO check if it affects distance or consumption
-#nfc.write("0C","6C") 
 
 # Communication
 

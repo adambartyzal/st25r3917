@@ -10,7 +10,6 @@
 - ST25R3916_IRQ_MASK_COL ? 
 - ST25R3916_REG_NUM_TX_BYTES2 - 23h = 0
 - C6
-- 
 
 # Antenna matching
 - Cp + 22p - antiresonance
@@ -19,3 +18,19 @@
 ### Preparation and execution of a transceive sequence:
 - Stop all activities
 - Reset RX gain
+
+# B' card
+Sniffed from discovery:
+- D8 -> 02
+- 10 -> 03
+- 00 -> 06 def
+- 28 -> 07
+- 24 -> 09
+---
+some reading
+- auxilary settings:
+- B9 -> 26
+- 18 -> 0C
+- 10 -> 0D
+- 00 -> 04 - default bit rate
+that's all I have :/
